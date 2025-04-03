@@ -11,3 +11,9 @@ CSS has been migrated to index.html, and updates.html
 
 April 3, 2025 11:46 AM CDT
 All Blog pages have been ported here.
+
+April 3, 2025 4:38 PM CDT
+The Games have been ported over to Github Pages.
+
+April 3, 2025 4:39 PM CDT
+Now trying to get other pages ported.
