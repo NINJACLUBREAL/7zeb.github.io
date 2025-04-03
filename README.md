@@ -8,3 +8,6 @@ index.html, updates.html, and me.html have been transfered over.
 
 April 3, 2025 8:34 AM CDT
 CSS has been migrated to index.html, and updates.html
+
+April 3, 2025 11:46 AM CDT
+All Blog pages have been ported here.
