@@ -2,8 +2,8 @@
 for migrating from Neocities to Github Pages.
 
 Step 1: Insert Placeholder (completed 4/2/2025)
-Step 2: Migrate index.html
-Step 3: Migrate updates.html
+Step 2: Migrate index.html (completed 4/2/2025)
+Step 3: Migrate updates.html (completed 4/2/2025)
 Step 4: Migrate other pages
 Step 5: Migrate 7Zeb Videos
 Step 6: Migrate CSS
