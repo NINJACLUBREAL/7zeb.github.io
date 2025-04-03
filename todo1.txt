@@ -6,7 +6,7 @@ Step 2: Migrate index.html (completed 4/2/2025)
 Step 3: Migrate updates.html (completed 4/2/2025)
 Step 4: Migrate other pages
 Step 5: Migrate 7Zeb Videos
-Step 6: Migrate CSS
+Step 6: Migrate CSS (completed 4/3/2025)
 Step 7: Migrate 404 Page and 404 CSS
 Step 8: Annouce on Discord and YouTube
 Step 9: Add settings.html
