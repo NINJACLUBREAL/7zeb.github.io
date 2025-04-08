@@ -1,162 +1,148 @@
-/* General Styling */
+/* Base Styles */
 body {
-  background-color: #2e302e;
-  color: #333;
-  font-family: 'Ubuntu', 'Times New Roman', serif;
+  background: linear-gradient(to right, #ADD8E6, #90EE90); /* Light Blue to Light Green */
+  min-height: 100vh;
   margin: 0;
-  padding: 0;
+  font-family: sans-serif; /* Consider a more specific modern font like 'Roboto', 'Open Sans', etc. */
+  color: #333;
+  line-height: 1.6; /* Improve readability */
 }
 
-h1, h2, h3, p, li {
-  color: #E2FCE7;
-}
-
-h1 {
-  font-size: 2.5em;
-  margin-bottom: 0.5em;
-}
-
-h2 {
-  font-size: 2em;
-  margin-bottom: 0.75em;
-}
-
-h3 {
-  font-size: 1.75em;
-  margin-bottom: 0.5em;
-}
-
-p {
-  line-height: 1.1;
-  margin-bottom: 1.25em;
-}
-
-li {
-  margin-bottom: 0.5em;
-}
-
-/* Bordered Form */
-form {
-  border: 3px solid #04AA6D;
-  border-radius: 8px;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Full-width inputs */
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-/* Set a style for all buttons */
-button {
-  background-color: #4287f5;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  width: 100%;
-  transition: background-color 0.3s, opacity 0.3s;
-}
-
-/* Add a hover effect for buttons */
-button:hover {
-  background-color: #038f5b;
-  opacity: 0.9;
-}
-
-marquee {
-   color: #E2FCE7;
-}
-
-
-/* Extra style for the cancel button (red) */
-.cancelbtn {
-  width: auto;
-  padding: 10px 18px;
-  background-color: #f44336;
-  border-radius: 4px;
-}
-
-/* Center the avatar image inside this container */
-.imgcontainer {
-  text-align: center;
-  margin: 24px 0 12px 0;
-}
-
-/* Avatar image */
-.avatar {
-  width: 40%;
-  border-radius: 50%;
-}
-
-/* Add padding to containers */
-.container {
-  padding: 16px;
-}
-
-/* The "Forgot password" text */
-span.psw {
-  float: right;
-  padding-top: 16px;
-}
-
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-  span.psw {
-    display: block;
-    float: none;
-  }
-  .cancelbtn {
-    width: 100%;
-  }
-}
-
-/* Top Navigation Bar */
+/* Navigation Bar */
 .topnav {
-  background-color: #66b0ff;
+  background-color: rgba(0, 0, 0, 0.7);
   overflow: hidden;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
-/* Style the links inside the navigation bar */
 .topnav a {
   float: left;
-  color: #f2f2f2;
+  display: block;
+  color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 10px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-right: 5px; /* Add a little spacing between nav items */
 }
 
-/* Change the color of links on hover */
 .topnav a:hover {
   background-color: #ddd;
   color: black;
 }
 
-/* Add a color to the active/current link */
-.topnav .active {
-  background-color: #04AA6D;
+.topnav a.active {
+  background-color: #4CAF50;
   color: white;
 }
 
-td {
- color: #E2FCE7;
+/* Content Sections */
+#home,
+#youtube,
+#videos,
+#end {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease-out forwards;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
 }
 
-tr {
-color: #E2FCE7;
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
+h1 {
+  color: #22543d; /* A darker shade of green/blue for headings */
+  margin-top: 0; /* Remove default top margin for better spacing */
+}
 
+h2,
+h3,
+p,
+ul,
+ol {
+  color: #444;
+}
 
+ul,
+ol {
+  padding-left: 20px;
+}
+
+/* Announcement/Marquee Replacement */
+.announcement {
+  background-color: #f0f8ff;
+  padding: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-top: 20px;
+}
+
+.announcement p {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scrollText 15s linear infinite;
+  margin: 0;
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Image Styling (Optional - Adjust as needed) */
+img {
+  max-width: 100%; /* Make images responsive within their containers */
+  height: auto;
+  vertical-align: middle; /* Align images vertically within text */
+  margin-bottom: 5px; /* Add a little space below images */
+  border-radius: 4px; /* Slightly rounded corners for images (optional) */
+  /* box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow (optional) */
+}
+
+/* Footer-like elements at the end */
+#end h2,
+#end h3,
+#end p {
+  text-align: center; /* Center align footer information */
+  color: #555;
+  font-size: 0.9em;
+  margin-bottom: 5px;
+}
+
+#end a {
+  color: #007bff; /* Link color */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#end a:hover {
+  color: #0056b3;
+}
+
+/* Specific adjustments for the countdown timer (you might need to adjust based on the library's CSS) */
+.countdown-timer {
+  display: block; /* Make it a block-level element for better centering */
+  text-align: center;
+  margin: 20px auto; /* Center horizontally with some top/bottom margin */
+}
