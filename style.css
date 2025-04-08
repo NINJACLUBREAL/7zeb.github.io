@@ -51,7 +51,7 @@ body {
   animation: fadeInUp 0.8s ease-out forwards;
   margin-bottom: 20px;
   padding: 20px;
-  background-color: rgba(173, 216, 230, 0.7); /* Light Blue with 70% opacity (LightSteelBlue) */
+  background-color: rgba(173, 216, 230, 0.7); /* Corrected: Light Blue (LightSteelBlue) */
   border-radius: 8px;
 }
 
