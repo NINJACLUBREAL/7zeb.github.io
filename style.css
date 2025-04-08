@@ -4,7 +4,7 @@ body {
   min-height: 100vh;
   margin: 0;
   font-family: sans-serif; /* Consider a more specific modern font like 'Roboto', 'Open Sans', etc. */
-  color: #333;
+  color: #f0f0f0; /* Default light text color for better contrast on dark backgrounds */
   line-height: 1.6; /* Improve readability */
 }
 
@@ -51,32 +51,26 @@ body {
   animation: fadeInUp 0.8s ease-out forwards;
   margin-bottom: 20px;
   padding: 20px;
-  background-color: rgba(34, 36, 34); /* I swear if this does not work. */
+  background-color: rgba(34, 36, 34, 0.7); /* Dark Gray Background */
   border-radius: 8px;
+  color: #f0f0f0; /* Inherited light text color */
 }
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+#home a,
+#youtube a,
+#videos a,
+#end a {
+  color: #87CEEB; /* Light Sky Blue for links within sections */
 }
 
 h1 {
-  color: #22543d; /* A darker shade of green/blue for headings */
+  color: #ffffff; /* White headings for contrast */
   margin-top: 0; /* Remove default top margin for better spacing */
 }
 
 h2,
-h3,
-p,
-ul,
-ol {
-  color: #444;
+h3 {
+  color: #e0e0e0; /* Slightly less bright headings */
 }
 
 ul,
@@ -92,6 +86,7 @@ ol {
   overflow: hidden;
   white-space: nowrap;
   margin-top: 20px;
+  color: #333; /* Dark text on light background */
 }
 
 .announcement p {
@@ -125,19 +120,19 @@ img {
 #end h3,
 #end p {
   text-align: center; /* Center align footer information */
-  color: #555;
+  color: #ddd; /* Lighter text for the dark background */
   font-size: 0.9em;
   margin-bottom: 5px;
 }
 
 #end a {
-  color: #007bff; /* Link color */
+  color: #87CEEB; /* Light Sky Blue for links in footer */
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 #end a:hover {
-  color: #0056b3;
+  color: #add8e6; /* Lighter blue on hover */
 }
 
 /* Specific adjustments for the countdown timer (you might need to adjust based on the library's CSS) */
@@ -145,23 +140,5 @@ img {
   display: block; /* Make it a block-level element for better centering */
   text-align: center;
   margin: 20px auto; /* Center horizontally with some top/bottom margin */
-}
-
-
-
-#home,
-#youtube,
-#videos,
-#end {
-  /* ... other styles ... */
-  color: #f0f0f0; /* Set a default light text color for the section */
-}
-
-/* You might need to override the color for specific elements if needed */
-#home a,
-#youtube a,
-#videos a,
-#end a {
-  /* Style your links separately */
-  color: #87CEEB; /* Example: Light Sky Blue for links */
+  color: #f0f0f0; /* Ensure timer text is also light */
 }
