@@ -51,7 +51,7 @@ body {
   animation: fadeInUp 0.8s ease-out forwards;
   margin-bottom: 20px;
   padding: 20px;
-  background-color: rgba(62, 92, 80); /* I fixed the CSS again. */
+  background-color: rgba(34, 36, 34); /* I swear if this does not work. */
   border-radius: 8px;
 }
 
