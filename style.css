@@ -146,3 +146,22 @@ img {
   text-align: center;
   margin: 20px auto; /* Center horizontally with some top/bottom margin */
 }
+
+
+
+#home,
+#youtube,
+#videos,
+#end {
+  /* ... other styles ... */
+  color: #f0f0f0; /* Set a default light text color for the section */
+}
+
+/* You might need to override the color for specific elements if needed */
+#home a,
+#youtube a,
+#videos a,
+#end a {
+  /* Style your links separately */
+  color: #87CEEB; /* Example: Light Sky Blue for links */
+}
