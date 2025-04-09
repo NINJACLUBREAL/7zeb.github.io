@@ -23,3 +23,6 @@ The Windows 10 Upgrade Saga page is complete (so far)
 
 April 7, 2025 9:53 AM CDT
 csstest.html has been ported over.
+
+April 9, 2025 9:10 AM CDT
+New UI is being ported right now.
