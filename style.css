@@ -195,3 +195,13 @@ input:checked + .slider:before {
   background: #222831;
   color: #eeeeee;
 }
+
+/* change size of heading 1*/
+
+h1 {
+  text-size: 32px;
+}
+
+h2 {
+ text-size: 28px; 
+}
