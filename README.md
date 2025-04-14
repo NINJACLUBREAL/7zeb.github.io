@@ -1,3 +1,6 @@
+## 7Zeb Website
+The official 7Zeb Website
+
 This is the 7Zeb Website, Major Updates to the site will be listed here.
 
 April 2, 2025 4:40 PM CDT
