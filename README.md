@@ -1,4 +1,4 @@
-## 7Zeb Website
+# 7Zeb Website
 The official 7Zeb Website
 
 ### Changelog
