@@ -30,3 +30,6 @@ csstest.html has been ported over.
 
 April 9, 2025 9:10 AM CDT
 New UI is being ported right now.
+
+April 19, 2025 4:47 PM CDT
+NewUI has been ported to 45% of the site
